@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class SpakeCli < Formula
+class Spake < Formula
   desc "Spake CLI tool for automatic machine translation."
   homepage "https://spake.uncommon.industries"
   url "https://github.com/UncommonIndustries/spake-cli/releases/download/v0.1.2/spake-cli_v0.1.2_macos-arm64.tar.gz"
