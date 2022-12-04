@@ -25,6 +25,5 @@ class Spake < Formula
         bin.install "spake-cli"
       end
     end
-    
   end
 end
