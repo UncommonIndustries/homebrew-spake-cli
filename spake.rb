@@ -1,26 +1,25 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+# Spake-cli homebrew formula for releasing brew formula via github.
+
 class Spake < Formula
   desc "Spake CLI tool for automatic machine translation."
   homepage "https://spake.uncommon.industries"
-  version "v0.1.2"
+  version "refs/tags/v0.1.5"
   depends_on :macos
   
   license "Apache-2.0"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/UncommonIndustries/spake-cli/releases/download/v0.1.2/spake-cli_v0.1.2_macos-arm64.tar.gz"
-      sha256 "39acb3cbdfa6fa9ade77bc550684ad21a1f21da9a4bb4c6c6e226154e0a5edfc"
+      url "https://github.com/UncommonIndustries/spake-cli/releases/download/refs/tags/v0.1.5/spake-cli_refs/tags/v0.1.5_macos-arm64.tar.gz"
+      sha256 "e9dfbaf6c95a61d09bc4053239ff50f1ccdc15080718d3d54f7c5a5bc909aeef"
 
       def install
         bin.install "spake-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/UncommonIndustries/spake-cli/releases/download/v0.1.2/spake-cli_v0.1.2_macos-x86_64.tar.gz"
-      sha256 "d97047a5036f67c818c4955a56c558907eddf5057344adcb9a5aa543236bd028"
+      url "https://github.com/UncommonIndustries/spake-cli/releases/download/refs/tags/v0.1.5/spake-cli_refs/tags/v0.1.5_macos-x86_64.tar.gz"
+      sha256 "8c7a3df866f407c3e2ed398cbf727cbb2c05478d6b65f59a3e1a2113224c7562"
       def install
         bin.install "spake-cli"
       end
